@@ -1,34 +1,55 @@
 # PROMAZO_Revelon_Dashboard
 This project is a UX/UI design case study for a dashboard interface designed for Revlon's R&amp;D team. The dashboard allows the team to view and interact with optimization results for their product portfolio, focusing on user-friendly navigation, clear data visualization, and an intuitive interface.
 
-
 Features
-Dashboard Overview:
-Displays key performance metrics such as Overall Sales, Gross Margin, and Growth using interactive charts.
-Navigation panel for switching between different views: Overall Portfolio, Product Categories, Time Periods, and Saved Views.
-Dynamic Navigation:
-The navigation panel allows users to switch between different dashboard views. Each view displays unique content relevant to the selected category.
-The title of the dashboard dynamically updates based on the selected view.
-Interactive Charts:
-Implemented using Chart.js, the charts provide interactive features such as tooltips that display additional information when hovering over data points.
-Save View Functionality:
-Users can save the current state of the dashboard (e.g., data displayed in the charts) into the browser's local storage, allowing for easy reference in the future.
+
+Dashboard Overview
+Main Metrics Display:
+The dashboard features interactive charts that display essential performance metrics, including Overall Sales, Gross Margin, and Growth.
+These charts are created using Chart.js and provide hover-based tooltips for additional insights.
+Dynamic Navigation
+Navigation Panel:
+A left-hand navigation panel enables users to switch between different views: Overall Portfolio, Product Categories, Time Periods, and Saved Views.
+The title of the dashboard dynamically updates according to the selected view.
+Save View Functionality
+Save Current View:
+Users can save the current state of the dashboard, including chart data, into the browser's local storage.
+Future enhancements will allow users to display and manage these saved views.
 Technologies Used
-HTML5 & CSS3: Structuring and styling the dashboard layout and user interface.
-JavaScript (ES6): Handling interactive features, including chart generation, dynamic content switching, and saving views.
-Chart.js: A JavaScript library used to create the interactive charts for visualizing key metrics.
+
+HTML5: For structuring the content and layout of the dashboard.
+CSS3: For styling the user interface with a clean, modern design.
+JavaScript (ES6): For implementing interactive features and dynamic content.
+Chart.js: A JavaScript library used for rendering responsive, interactive charts.
 How to Run the Project
+
 Clone the Repository:
 bash
 Copy code
-git clone https://github.com/yourusername/revlon-rnd-dashboard.git
-Open the Project: Navigate to the project directory and open the index.html file in your web browser to view the dashboard.
-Interact with the Dashboard:
-Use the navigation panel to switch between different views.
-Hover over the charts to see interactive tooltips.
-Save the current dashboard view using the "Save View" button.
+git clone https://github.com/Devkhakhar/PROMAZO_Revelon_Dashboard.git
+Navigate to the Project Directory:
+bash
+Copy code
+cd PROMAZO_Revelon_Dashboard
+Open the Project:
+Open the index.html file in your web browser to view the dashboard.
+Interacting with the Dashboard
+
+Navigation: Use the navigation panel on the left to switch between different views of the dashboard.
+Charts: Hover over the chart data points to see additional details in the tooltips.
+Save View: Click the "Save View" button to save the current dashboard state to local storage.
 Future Enhancements
-Drill-Down Feature: Implement a detailed view or modal that appears when clicking on specific metrics, providing deeper insights.
-Display Saved Views: Enhance the "Saved Views" section to display and manage previously saved dashboard states.
+
+Drill-Down Feature:
+Implement a detailed view or modal that appears when clicking on specific metrics, offering more granular data insights.
+Display Saved Views:
+Enhance the "Saved Views" section to allow users to view and manage previously saved dashboard states.
 Contribution
-If you would like to contribute to this project, feel free to fork the repository and submit a pull request. All contributions are welcome!
+
+Contributions are welcome! To contribute to this project:
+
+Fork the repository.
+Create a new branch for your feature (git checkout -b feature-name).
+Commit your changes (git commit -m 'Add some feature').
+Push your branch (git push origin feature-name).
+Open a pull request to discuss and merge your changes.
