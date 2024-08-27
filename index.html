@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revlon R&D Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Include Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Navigation Panel -->
+        <nav class="navigation-panel">
+            <h2>Revlon Dashboard</h2>
+            <ul>
+                <li><a href="#" class="active" data-view="overall-portfolio">Overall Portfolio</a></li>
+                <li><a href="#" data-view="product-categories">Product Categories</a></li>
+                <li><a href="#" data-view="time-periods">Time Periods</a></li>
+                <li><a href="#" data-view="saved-views">Saved Views</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Dashboard Area -->
+        <main class="main-dashboard">
+            <header class="dashboard-header">
+                <h1 id="dashboard-title">Product Portfolio Overview</h1>
+                <button class="save-view">Save View</button>
+            </header>
+
+            <!-- Different Views -->
+            <section id="overall-portfolio" class="dashboard-view active-view">
+                <div class="metrics-display">
+                    <div class="metric">
+                        <h3>Overall Sales</h3>
+                        <canvas id="salesChart"></canvas>
+                    </div>
+                    <div class="metric">
+                        <h3>Gross Margin</h3>
+                        <canvas id="marginChart"></canvas>
+                    </div>
+                    <div class="metric">
+                        <h3>Growth</h3>
+                        <canvas id="growthChart"></canvas>
+                    </div>
+                </div>
+            </section>
+
+            <section id="product-categories" class="dashboard-view">
+                <h2>Product Categories View</h2>
+                <!-- Add your content for Product Categories here -->
+            </section>
+
+            <section id="time-periods" class="dashboard-view">
+                <h2>Time Periods View</h2>
+                <!-- Add your content for Time Periods here -->
+            </section>
+
+            <section id="saved-views" class="dashboard-view">
+                <h2>Saved Views</h2>
+                <!-- Add your content for Saved Views here -->
+            </section>
+        </main>
+    </div>
+    
+    <!-- Include the script.js file -->
+    <script src="script.js"></script>
+</body>
+</html>

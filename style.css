@@ -1,0 +1,114 @@
+/* Reset some basic styles */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+/* Container for the entire dashboard */
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Styling the navigation panel */
+.navigation-panel {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.navigation-panel h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.navigation-panel ul {
+    list-style-type: none;
+}
+
+.navigation-panel ul li {
+    margin: 10px 0;
+}
+
+.navigation-panel ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navigation-panel ul li a.active {
+    font-weight: bold;
+}
+
+/* Main dashboard area */
+.main-dashboard {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    overflow-y: auto;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard-header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.save-view {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.save-view:hover {
+    background-color: #0056b3;
+}
+
+.metrics-display {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.metric {
+    width: 30%;
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 250px; /* Set a fixed height to prevent stretching */
+}
+
+.metric h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+canvas {
+    width: 100% !important; /* Ensure the canvas takes up full width */
+    height: 100% !important; /* Ensure the canvas takes up full height */
+}
+
+
+.dashboard-view {
+    display: none;
+}
+
+.active-view {
+    display: block;
+}
